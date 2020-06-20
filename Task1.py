@@ -22,9 +22,9 @@ with open('texts.csv', 'r') as f:
             numbers.extend(text[:2])
 
 with open('calls.csv', 'r') as f:
-    reader = csv.reader(f)
+    reader = csv.reader(fu
     for call in list(reader):
         numbers.extend(call[:2])
 
-        numbers = debli_list(numbers)
+        numbers = dubli_list(numbers)
 print(f'There are {len(numbers)} different telephone numbers in the records.')
