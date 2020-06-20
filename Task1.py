@@ -25,3 +25,6 @@ with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
     for call in list(reader):
         numbers.extend(call[:2])
+
+        numbers = debli_list(numbers)
+print(f'There are {len(numbers)} different telephone numbers in the records.')
